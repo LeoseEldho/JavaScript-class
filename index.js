@@ -306,8 +306,21 @@
 // }  
 // function displaydom(output){
 //     text.innerHTML=output 
-// }               
+// }              
 
-              
-                    
-                 
+let person={
+    firstname: 'john',
+    lastname:'doe',
+    display :function(age){
+    return `the fullname is ${this.firstname} ${this.lastname} -${age}`
+    }
+}
+
+let player={
+    firstname:'leo',
+    lastname:'messi',
+    age:35,
+}
+
+document.writeln(person.display.call(player,player.age))          
+         

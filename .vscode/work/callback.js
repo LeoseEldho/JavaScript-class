@@ -1,18 +1,18 @@
-// let total =sum(2,3);
+let total =sum(2,3);
 
-// displayconsole(total)
-// displaydom(total)
+displayconsole(total)
+displaydom(total)
 
-// function sum(a,b){
-//     let result =a+b;
-//     return result
-// }
-// function displayconsole(output){
-//     console.log(output)
-// }  
-// function displaydom(output){
-//     text.innerHTML=output 
-// }  
+function sum(a,b){
+    let result =a+b;
+    return result
+}
+function displayconsole(output){
+    console.log(output)
+}  
+function displaydom(output){
+    text.innerHTML=output 
+}  
 
 // 
 //   <input type="text" id="box1" placeholder="Enter the number">
