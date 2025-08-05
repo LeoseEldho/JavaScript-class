@@ -307,20 +307,21 @@
 // function displaydom(output){
 //     text.innerHTML=output 
 // }              
+    
+// let str='apple';
 
-let person={
-    firstname: 'john',
-    lastname:'doe',
-    display :function(age){
-    return `the fullname is ${this.firstname} ${this.lastname} -${age}`
-    }
+// let x=str.length
+
+// for(let i=x-1; i>=0; i--){
+//     document.writeln(str[i])
+// }  
+
+let str='apple';
+let revese='';
+let i=str.length-1;
+
+while(i>=0){
+    revese +=str[i]
+    i--
 }
-
-let player={
-    firstname:'leo',
-    lastname:'messi',
-    age:35,
-}
-
-document.writeln(person.display.call(player,player.age))          
-         
+document.writeln(revese)

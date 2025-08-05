@@ -9,4 +9,4 @@ function sqare(element){
 
 function output(element){
     document.writeln(element)
-} 
+}     
