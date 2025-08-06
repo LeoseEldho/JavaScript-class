@@ -313,15 +313,12 @@
 // let x=str.length
 
 // for(let i=x-1; i>=0; i--){
-//     document.writeln(str[i])
+//     document.writeln(typeof str[i])
 // }  
 
-let str='apple';
-let revese='';
-let i=str.length-1;
+               
 
-while(i>=0){
-    revese +=str[i]
-    i--
-}
-document.writeln(revese)
+
+//   input => [[1, 2], [3, 4]]
+//   output => [{x: 1, y: 2}, ...]
+ 

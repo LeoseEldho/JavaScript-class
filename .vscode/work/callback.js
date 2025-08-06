@@ -14,6 +14,7 @@ function displaydom(output){
     text.innerHTML=output 
 }  
 
+
 // 
 //   <input type="text" id="box1" placeholder="Enter the number">
 //   <input type="text " id="box2" placeholder="Enter the second No"><br>
@@ -37,6 +38,7 @@ function displaydom(output){
 //     return a*b;
 // }
 
+
 // function calculator(a,b,callback){
 //     return callback(a,b);
 // }
@@ -55,3 +57,24 @@ function displaydom(output){
 //     }
 //     document.getElementById("result").textContent = "Result: " + result;
 // }
+
+function add(num1,num2){
+    let output= num1+num2;
+    sum(output)
+}
+
+function sum(output){
+    document.writeln(output)
+}
+
+add(5, 5)
+
+
+function add(x,y,callback){
+    let output =x*y;
+    callback(output)
+}
+function sum(output){
+    document.writeln(output)
+}
+add(3, 5, sum)
