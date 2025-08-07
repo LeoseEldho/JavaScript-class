@@ -15,3 +15,11 @@ promise.then(
     }
 )
 document.writeln(promise)
+
+
+
+let wait=time=> new Promise(resolve =>{
+    setTimeout(resolve,time)
+});
+
+wait(3000).then(()=> document.writeln('thanks for waiting'));
