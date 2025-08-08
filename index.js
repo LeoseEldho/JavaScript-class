@@ -323,9 +323,9 @@
 //   output => [{x: 1, y: 2}, ...]
  
 
-// let array=[[1,2],[3,4]];
+let array=[[1,2],[3,4]];
 
-// // let x=array.flat() 
+// let x=array.flat() 
 // function subarray(){
 //     let x =array[0][0]
 //     document.writeln(x);
@@ -336,23 +336,14 @@
 // let array=[[1,2],[3,4]];
 // let obj=Object.array
 
-// let num =2;
-// let isPrime = true;
 
-// if (num <= 1) {
-//     isPrime = false;
-// }
+let x=array.slice(0)
+let y=array.splice(1)
 
-// for (let i = 2; i < num; i++) {
-//     if (num % i === 0) {
-//         isPrime = false;
-//         break;
-//     }
-// }
+for(i=0; i<array.length; i++){
+    document.writeln(`x: ${x[0]}`)
+    document.writeln(`y: ${y[i]}`)
+}
 
-// if (isPrime) {
-//     document.writeln(num + " is a prime number.");
-// } else {
-//     document.writeln(num + " is not a prime number.");
-// }
-
+document.writeln(x)
+document.writeln(y)    

@@ -10,4 +10,9 @@
     border: 1px solid ;
     position: relative;
     background-color: darkcyan;
-}              
+}       
+#canvas{
+    border: 1px solid black;
+}       
+
+        
