@@ -323,7 +323,7 @@
 //   output => [{x: 1, y: 2}, ...]
  
 
-let array=[[1,2],[3,4]];
+// let array=[[1,2],[3,4]];
 
 // let x=array.flat() 
 // function subarray(){
@@ -337,13 +337,13 @@ let array=[[1,2],[3,4]];
 // let obj=Object.array
 
 
-let x=array.slice(0)
-let y=array.splice(1)
+// let x=array.slice(0)
+// let y=array.splice(1)
 
-for(i=0; i<array.length; i++){
-    document.writeln(`x: ${x[0]}`)
-    document.writeln(`y: ${y[i]}`)
-}
+// for(i=0; i<array.length; i++){
+//     document.writeln(`x: ${x[0]}`)
+//     document.writeln(`y: ${y[i]}`)
+// }
 
-document.writeln(x)
-document.writeln(y)    
+// document.writeln(x)
+// document.writeln(y)
