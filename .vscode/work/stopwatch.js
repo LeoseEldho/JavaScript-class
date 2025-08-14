@@ -24,7 +24,7 @@ pbtn.addEventListener('click', ()=>{
         paused=true;
         elapsedtime=Date.now()-starttime;
         clearInterval(intervalid);
-    }
+    }     
 });
 rbtn.addEventListener('click', ()=>{
     paused=true;

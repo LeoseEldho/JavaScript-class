@@ -1,0 +1,76 @@
+<h1>rock papper scissor</h1>  
+<button onclick="
+ let randomNumber=( Math.floor(Math.random()*3 ));
+
+let computermove='';
+
+ if(randomNumber>=0&& randomNumber<1){
+   computermove='rock'
+ }else if(randomNumber>=1&&randomNumber<2){
+   computermove='paper'
+ }else{
+   computermove='scissor'
+ }
+
+let result='';
+
+if(computermove==='rock'){
+  result='tie.'
+}else if(computermove==='paper'){
+  result='YOU lose'
+}else if(computermove==='scissor'){
+  result='You Win.'
+}
+
+alert(`You picked rock. computer pick ${computermove}. ${result}`);
+" >rock</button>
+<button onclick="
+  let randomNumber=( Math.round(Math.random()*3 ));
+
+  let computermove='';
+
+  if(randomNumber>=0&& randomNumber<1){
+    computermove='rock'
+  }else if(randomNumber>=1&&randomNumber<2){
+    computermove='paper'
+  }else{
+    computermove='scissor'
+  }
+
+  let result='';  
+
+  if(computermove==='rock'){
+    result='You win'
+  }else if(computermove==='paper'){
+    result='tie.'
+  }else if(computermove==='scissor'){    
+    result='You lose.'  
+  }
+
+  alert(`You picked paper. computer pick ${computermove}. ${result}`);
+">paper</button>   
+<button onclick="
+  let randomNumber=( Math.round(Math.random()*3 ));
+
+  let computermove='';
+
+  if(randomNumber>=0&& randomNumber<1){
+    computermove='rock'
+  }else if(randomNumber>=1&&randomNumber<2){
+    computermove='paper'
+  }else{
+    computermove='scissor'
+  }
+
+  let result='';
+
+  if(computermove==='scissor'){
+    result='you lose.'
+  }else if(computermove==='paper'){
+    result='YOU win'
+  }else if(computermove==='scissor'){
+    result='tie.'
+  }
+
+  alert(`You picked scissor. computer pick ${computermove}. ${result}`);
+">scissor</button>
