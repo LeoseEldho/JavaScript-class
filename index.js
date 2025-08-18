@@ -6,10 +6,7 @@
 //     document.write("-");
 // }else{
 //     document.write("=");
-// }     
-
-const { useOptimistic } = require("react");
-
+// }  
 
 // var day="8";    
 // switch(day){    
@@ -358,30 +355,7 @@ const { useOptimistic } = require("react");
 // }
 // for(let i=1 ; i<=5; i++){
 //     document.writeln(ran()+'<br>')
-    
 // }
-
-
-
-// let num=-10;
-
-// if(num>0){
-//     document.write("+");
-// }else if(num<0){
-//     document.writeln('-')
-// }else{
-//     document.writeln('zero')
-// }
-
-
-// let num=9;
-
-// if(num%2==0){
-//     document.writeln('even');
-// }else{
-//     document.writeln('odd')
-// }
-
 
 
 // function check(num1,num2){
@@ -400,4 +374,5 @@ const { useOptimistic } = require("react");
 //         document.writeln('false')
 //     }
 // })
-// console.log(check(2,100);
+// console.log(check(2,100)
+        

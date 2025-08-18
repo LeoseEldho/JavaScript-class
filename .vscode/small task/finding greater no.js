@@ -9,3 +9,7 @@ if(x>y&&x>z){
 }else{
     document.writeln(`${z } is greater`)
 }         
+
+
+
+// console.log(Math.max(1,2,3,4))
