@@ -375,4 +375,20 @@
 //     }
 // })
 // console.log(check(2,100)
-        
+
+let numbers=[1,2,3,4,5,6,7,8,9,10];
+let number=5;
+const length=numbers.length
+let i=0;
+while(i<10){
+    let result=number*numbers[i]
+    i++
+    if(i%2==0)
+    console.log(`${number}*${i}=${result}<br>`) 
+}
+
+
+
+
+
+       
