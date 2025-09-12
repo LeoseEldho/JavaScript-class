@@ -8,6 +8,7 @@
 //     document.write("=");
 // }  
 
+
 // var day="8";    
 // switch(day){    
 //     case "1":
@@ -319,9 +320,15 @@
                
 
 
+
+
+
 //   input => [[1, 2], [3, 4]]
 //   output => [{x: 1, y: 2}, ...]
  
+
+
+
 
 // let array=[[1,2],[3,4]];
 
@@ -389,5 +396,97 @@
 
 // let str=(String.fromCharCode(69))
 // console.log(str)
-
    
+
+
+
+// let date=new Date()
+
+// let formatdate=(date)=>{
+//     let day=date.getDay()
+//     let month=date.getMonth()+1
+//     let year=date.getFullYear()
+
+//     return `${day}-${month}- ${year}`
+// }
+
+// console.log(formatdate(date))
+
+
+// let move=((str)=>{
+//     return str
+//     .split('').map(char=>String.fromCharCode(char.charCodeAt(0)+1)).join('')
+//     // .split('').map(char=>String.fromCharCode(char.charCodeAt(0)+1)).join('');
+// })
+
+// console.log(move('abcd'))
+
+// for(let i=1; i<=10; i++){
+//     console.log(i)
+// }
+
+// Array.map(()=>{})
+//********************** */
+
+// let input=[1,2,3,4,5,6]
+// let filter=input.filter((x)=> x%2==0)
+
+// console.log(filter)
+
+
+// let input=[10,15,20,25,30]
+// let filter=input.filter((x)=>x%2!==0)
+
+// console.log(filter)
+
+
+// let input=[10,55,72,4,99]
+// let filters=input.filter((x)=> x>=50)
+
+// console.log(filters)
+
+
+// let input=['hi','hello','wonderful','sun']
+// let result=input.filter((x)=> x.length>5)
+
+// console.log(result)
+
+
+// let users=[
+//     {name:"alice",age:17},
+//     {name:"bob",age:22},
+//     {name:"charlie",age:15},
+//     {name:"david",age:30}
+// ]
+// let result=users.filter((x)=> x.age>18)
+// console.log(result)
+
+
+// let input=[1,3,5,6,9,11,12]
+// let result=input.filter((x)=> x%3==0)
+// console.log(result)
+
+
+// let input=[0,1,false,2,"",3,null,undefined,"hello"]
+// let result=input.filter(x=> parseInt(x))
+
+// console.log(result)
+
+
+// let input=['apple','bannana','orange','grape','umbrella']
+// let result=input.filter((x,element)=> x[element].startsWith("a","o","u"))
+
+// console.log(result)
+
+
+// const users=[
+//     {name:"alice"},{name:"bob"},{name:"charlie"},{name:"david"}
+// ]
+// let result=users.filter(x=> x.name.includes("a"))
+// console.log(result)
+
+
+// let input=[1,2,3,4,4,5]
+// let result=input.filter((x,element)=> x[element]!==x )
+// console.log(result)
+

@@ -23,3 +23,15 @@ let result=user.map((x)=>{
 })
 
 console.log(result)
+
+
+// let date=['2023-4-4','2025-4-5','2035-1-7']
+
+
+// let formate=((element)=>{
+//     let part=element.split("-")
+//     return `${part[1]}/${part[0]}/ ${part[2]}`
+// })
+
+// let result=date.map(formate)
+// console.log(result)

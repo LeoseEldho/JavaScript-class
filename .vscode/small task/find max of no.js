@@ -12,4 +12,3 @@ let result =((add)=>{
     }
     return max
 })
-console.log(result(add))
