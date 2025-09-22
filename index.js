@@ -426,67 +426,56 @@
 // }
 
 // Array.map(()=>{})
-//********************** */
+//***********************/
+///gdsdfkj
+///bdsdfjhjc
+///dedfjiis
 
-// let input=[1,2,3,4,5,6]
-// let filter=input.filter((x)=> x%2==0)
+//dusdhd
+// async function productfetch() {
+//     let response=await fetch('./product.json')
+//     let data=await response.json()
+//     allData=data
 
-// console.log(filter)
+//     let result=allData.map((X)=> X.name)
+//     console.log(result)
 
+    
+//     let newArray=allData.map((x)=>({name:x.name , salary: x.salary}))
+//     console.log((newArray))
+//     let taxed=0.10
+//     let newTax=allData.map((x)=>({...x,tax:x.salary*taxed}))
+//     console.log(newTax)
 
-// let input=[10,15,20,25,30]
-// let filter=input.filter((x)=>x%2!==0)
+//     let developers=allData.filter((x)=> x.role=="developer")
+//     console.log(developers)
 
-// console.log(filter)
+//     let age25=allData.filter((x)=> x.age>25)
+//     console.log(age25)
 
+//     let salary=allData.filter((x)=> x.salary<5000)
+//     console.log(salary)
 
-// let input=[10,55,72,4,99]
-// let filters=input.filter((x)=> x>=50)
+//     let ascending=allData.sort((x,y)=>x.age-y.age)
+//     console.log(ascending)
 
-// console.log(filters)
+//     let descending=allData.sort((x,y)=> y.salary-x.salary)
+//     console.log(descending)
 
+//     let aZ=allData.sort((x,y)=> x.name.localeCompare(y.name))
+//     console.log(aZ)
 
-// let input=['hi','hello','wonderful','sun']
-// let result=input.filter((x)=> x.length>5)
-
-// console.log(result)
-
-
-// let users=[
-//     {name:"alice",age:17},
-//     {name:"bob",age:22},
-//     {name:"charlie",age:15},
-//     {name:"david",age:30}
-// ]
-// let result=users.filter((x)=> x.age>18)
-// console.log(result)
-
-
-// let input=[1,3,5,6,9,11,12]
-// let result=input.filter((x)=> x%3==0)
-// console.log(result)
-
-
-// let input=[0,1,false,2,"",3,null,undefined,"hello"]
-// let result=input.filter(x=> parseInt(x))
-
-// console.log(result)
+//     let totalSalary=allData.reduce((x,y)=> x+y.salary,0)
+//     console.log(totalSalary)
+// }
 
 
-// let input=['apple','bannana','orange','grape','umbrella']
-// let result=input.filter((x,element)=> x[element].startsWith("a","o","u"))
+// productfetch()
 
-// console.log(result)
+let person={
+    name:'john',
+    age:25,
+    city:'york',
+}
 
-
-// const users=[
-//     {name:"alice"},{name:"bob"},{name:"charlie"},{name:"david"}
-// ]
-// let result=users.filter(x=> x.name.includes("a"))
-// console.log(result)
-
-
-// let input=[1,2,3,4,4,5]
-// let result=input.filter((x,element)=> x[element]!==x )
-// console.log(result)
-
+person.
