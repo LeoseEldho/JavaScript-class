@@ -9,6 +9,7 @@
 // }  
 
 
+
 // var day="8";    
 // switch(day){    
 //     case "1":
@@ -468,14 +469,95 @@
 //     let totalSalary=allData.reduce((x,y)=> x+y.salary,0)
 //     console.log(totalSalary)
 // }
-
-
 // productfetch()
 
-let person={
-    name:'john',
-    age:25,
-    city:'york',
-}
 
-person.
+// let person={name:'los',age:23}
+// // let result=Object.keys(person)
+// for(let i in person){
+//     console.log(i)
+//     console.log(person[i])
+// }
+
+
+// let num=0
+// if(num>0){
+//     console.log('p')
+// }else if(num<0){
+//     console.log('ne')
+// }else{
+//    console.log('=')
+// }
+
+
+// let age =17
+// let result=(age>=18)?'can vote':'can not vote'
+// console.log(result)
+
+
+// let alpha='s'
+// for(let key of alpha){
+//     let vowels='aioue'
+//     if(vowels.includes(key)){
+//         console.log(`${alpha} is vowel`)
+//     }else{
+//         console.log('constant')
+//     }
+// }
+
+
+// let num=0
+// if(num%2==0){
+//     console.log('even')
+// }else{
+//     console.log('odd')
+// }
+
+
+// let num=[1,2,3,4,5]
+// let sum=0
+// for(let i=0; i<num.length; i++){
+//     sum+=num[i]
+// }
+// console.log(sum)
+
+
+// let num=3;
+// for(let i=1; i<=10; i++){{
+// console.log(`${num}*${i} =${num*i}`)
+// }}
+
+
+// let num=[1,2,34,4,5]
+// let greater=0
+// for(let i=0; i<num.length; i++){
+//     if(num[i]>greater){
+//         greater=num[i]
+//     }
+// }
+// console.log(greater)
+
+
+// let num=[6,24,30]
+// let Average=0
+// for(let i=0; i<num.length; i++){
+//     Average+=num[i]/num.length
+// }
+// console.log(Average)
+
+//cjk ,n  ,,qazw hukbj uinj, g
+
+
+let number=[5,2,9,1,7]
+let n=number.length
+
+for(let i=0; i<n-1; i++){
+   for(let j=0; j<n-i; j++){
+      if(number[j]>number[j+1]){
+         let temp =number[j]
+         number[j]=number[j+1]
+         number[j+1]=temp
+      }
+   }
+}
+console.log(number)
