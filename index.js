@@ -545,19 +545,67 @@
 // }
 // console.log(Average)
 
-//cjk ,n  ,,qazw hukbj uinj, g
+//cjk ,n  fhubjskf hdfuh sdfsdfe sdfe, g
 
 
-let number=[5,2,9,1,7]
-let n=number.length
+// let number=[5,2,9,1,7]
+// let n=number.length
 
-for(let i=0; i<n-1; i++){
-   for(let j=0; j<n-i; j++){
-      if(number[j]>number[j+1]){
-         let temp =number[j]
-         number[j]=number[j+1]
-         number[j+1]=temp
-      }
-   }
-}
-console.log(number)
+
+// for(let i=0; i<n-1; i++){
+//    for(j=0; j<n-1; j++){
+//       if(number[j]>number[j+1]){
+//          let temp=number[j]
+//          number[j]=number[j+1]
+//          number[j+1]=temp
+//       }
+//    }
+// }
+// console.log()
+
+
+// let num=99
+// let isPrime=true
+
+// if(num<=1){
+//    isPrime=false
+// }
+// for(let i=2; i<num/2; i++){
+//    let q=Math.floor(num/i)
+//    if(q*i==num){
+//       isPrime=false
+//    }
+// }
+// if(isPrime){
+//    console.log('Prime')
+// }else{
+//    console.log('not prime')
+// }
+
+
+// ----------------------------------
+// let num=10
+// for(let i=1; i<=num; i++){
+//     console.log(i)
+// }
+
+
+// let num=[1,2,3,4,5,6,7,8,9,10];
+// let sum=0
+
+// for(let i=1; i<=num.length; i++){
+//     sum+=i
+// }
+// console.log(sum)
+
+
+// for(let i=0; i<=20; i++){
+//     if(i%2==0){
+//         console.log(i,'even')
+//     }
+// }
+
+
+// for(let i=10; i>=0; i--){
+//     console.log(i)
+// }
