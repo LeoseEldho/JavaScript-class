@@ -545,8 +545,6 @@
 // }
 // console.log(Average)
 
-//cjk ,n  fhubjskf hdfuh sdfsdfe sdfe, g
-
 
 // let number=[5,2,9,1,7]
 // let n=number.length
@@ -609,3 +607,23 @@
 // for(let i=10; i>=0; i--){
 //     console.log(i)
 // }
+
+//sdfew sdfew
+// let menu={
+//     width:200,
+//     height:300,
+//     title:"My Menu"
+// }
+
+
+//asdwqasdwq  sdfewsdfewsfdw   sdfew
+//sdfewsdfewsfew
+// let b=26
+// while(b>=2){
+//     b=b-2
+// }
+
+
+// sdfew   sdfwsdew
+
+
