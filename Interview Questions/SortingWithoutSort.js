@@ -13,7 +13,6 @@ for(let i=0; i<n-1; i++){
 
 console.log(numbers)
 
-
 // let numbers=[5,2,9,1,7]
 // while(swapped){
 

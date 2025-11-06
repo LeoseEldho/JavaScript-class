@@ -472,158 +472,73 @@
 // productfetch()
 
 
-// let person={name:'los',age:23}
-// // let result=Object.keys(person)
-// for(let i in person){
-//     console.log(i)
-//     console.log(person[i])
+//------------------------------------------------------------------------------------------------------------------------
+
+
+// let a=[[1,2,3],[3,2,1]]
+// let b=[[4,5,6],[6,5,4]]
+
+// let addMatrix=(a,b)=>{
+//     let result=[]
+//     for(let i=0; i<a.length; i++){
+//         result[i]=[]
+//         for(j=0; j<a[i].length; j++){
+//             result[i][j]=a[i][j]+b[i][j]
+//         }
+//     }
+//     return result
 // }
+// console.log(addMatrix(a,b))
 
-
-// let num=0
-// if(num>0){
-//     console.log('p')
-// }else if(num<0){
-//     console.log('ne')
-// }else{
-//    console.log('=')
-// }
-
-
-// let age =17
-// let result=(age>=18)?'can vote':'can not vote'
-// console.log(result)
-
-
-// let alpha='s'
-// for(let key of alpha){
-//     let vowels='aioue'
-//     if(vowels.includes(key)){
-//         console.log(`${alpha} is vowel`)
+//.................................................
+// let n=27
+// function perfectNo(n){
+//     let sum=0
+//     for(let i=1; i<n; i++){
+//         if(n%i==0){
+//             sum+=i
+//             console.log(i)
+//         }else{
+//             console.log(i,"not")
+//         }
+//     }
+//     console.log("the sum",sum)
+//     if(sum==n){
+//         console.log('true')
 //     }else{
-//         console.log('constant')
+//         console.log('false')
+//     }
+// }
+// perfectNo(n)
+
+// let symbol=window.prompt('enter the symbol')
+// let row=window.prompt('enter the row')
+// let colum =window.prompt('enter the colum')
+
+// function drawCenterPyramid(rows) {
+//     for (let i = 0; i < rows; i++) {
+//         let pattern = '';
+//         for (let j = 0; j < rows - i - 1; j++) {
+//             pattern += ' ';
+//         }
+//         for (let k = 0; k < 2 * i + 1; k++) {
+//             pattern += '*';
+//         }
+//         console.log(pattern);
 //     }
 // }
 
+// drawCenterPyramid(5);
 
-// let num=0
-// if(num%2==0){
-//     console.log('even')
-// }else{
-//     console.log('odd')
-// }
+//sdfew  sdfew   sdfewdfew
 
-
-// let num=[1,2,3,4,5]
-// let sum=0
-// for(let i=0; i<num.length; i++){
-//     sum+=num[i]
-// }
-// console.log(sum)
-
-
-// let num=3;
-// for(let i=1; i<=10; i++){{
-// console.log(`${num}*${i} =${num*i}`)
-// }}
-
-
-// let num=[1,2,34,4,5]
-// let greater=0
-// for(let i=0; i<num.length; i++){
-//     if(num[i]>greater){
-//         greater=num[i]
-//     }
-// }
-// console.log(greater)
-
-
-// let num=[6,24,30]
-// let Average=0
-// for(let i=0; i<num.length; i++){
-//     Average+=num[i]/num.length
-// }
-// console.log(Average)
-
-
-// let number=[5,2,9,1,7]
-// let n=number.length
-
-
-// for(let i=0; i<n-1; i++){
-//    for(j=0; j<n-1; j++){
-//       if(number[j]>number[j+1]){
-//          let temp=number[j]
-//          number[j]=number[j+1]
-//          number[j+1]=temp
-//       }
-//    }
-// }
-// console.log()
-
-
-// let num=99
-// let isPrime=true
-
-// if(num<=1){
-//    isPrime=false
-// }
-// for(let i=2; i<num/2; i++){
-//    let q=Math.floor(num/i)
-//    if(q*i==num){
-//       isPrime=false
-//    }
-// }
-// if(isPrime){
-//    console.log('Prime')
-// }else{
-//    console.log('not prime')
-// }
-
-
-// ----------------------------------
-// let num=10
-// for(let i=1; i<=num; i++){
-//     console.log(i)
-// }
-
-
-// let num=[1,2,3,4,5,6,7,8,9,10];
-// let sum=0
-
-// for(let i=1; i<=num.length; i++){
-//     sum+=i
-// }
-// console.log(sum)
-
-
-// for(let i=0; i<=20; i++){
-//     if(i%2==0){
-//         console.log(i,'even')
-//     }
-// }
-
-
-// for(let i=10; i>=0; i--){
-//     console.log(i)
-// }
-
-//sdfew sdfew
-// let menu={
-//     width:200,
-//     height:300,
-//     title:"My Menu"
-// }
-
-
-//asdwqasdwq  sdfewsdfewsfdw   sdfew
-//sdfewsdfewsfew
-// let b=26
-// while(b>=2){
-//     b=b-2
-// }
-
-
-// sdfew   sdfwsdew
-
-
+function gcd(a,b){
+    while(b!==0){
+        let temp=b;
+        b=a%b;
+        a=temp
+    }
+    return a
+}
+console.log(gcd(42, 18))
+//sdfewsdfew
