@@ -1,4 +1,3 @@
-
 // var a=0;
 // if(a>0){
 //     document.write("+");
@@ -6,16 +5,14 @@
 //     document.write("-");
 // }else{
 //     document.write("=");
-// }  
+// }
 
-
-
-// var day="8";    
-// switch(day){    
+// var day="8";
+// switch(day){
 //     case "1":
 //     document.write("mon");
-//     break;       
-//     case "2":      
+//     break;
+//     case "2":
 //         document.write("tues");
 //         break;
 //     case "3":
@@ -31,19 +28,19 @@
 // }
 
 // var i=1;
-// while( i <= 8){    
-//     document.write(i+"<br>");          
+// while( i <= 8){
+//     document.write(i+"<br>");
 //     i++;
 // }
 
 // var i=8;
 // do{
 //     document.write(i+"<br>");
-//     i--;      
+//     i--;
 // }
 // while(i>=1);
 
-// function hello(n2,n3){    
+// function hello(n2,n3){
 //     return n2+n3;
 // }
 // var b=hello(1,2);
@@ -52,23 +49,23 @@
 // var animal=["a","b","c","f"];
 // var x=animal.length;
 
-// for(var i=0; i<x; i++){              
-//     document.write(   
-//         animal[i]+"<br>" 
-//     );             
+// for(var i=0; i<x; i++){
+//     document.write(
+//         animal[i]+"<br>"
+//     );
 // }
 
 // var no=[6,5,7,2];
 // document.write(no[1]+no[2]);
-    
+
 // var a= document.getElementsByName("text")[0];
-// var b= document.querySelector(".text2");                
+// var b= document.querySelector(".text2");
 // function message(){
 //    b.innerHTML = "hai"+a.value;
 // }
 
 // var heading =document.createElement("H1");
-// function create(){                  
+// function create(){
 //     heading.innerHTML="hello world";
 //     document.body.appendChild(heading)
 // }
@@ -98,10 +95,10 @@
 // }
 // function remove(){
 //     b.remove();
-// }                                
+// }
 
 // let a=document.getElementsByClassName(".demo");
-// let b=document.getElementById("demo1");          
+// let b=document.getElementById("demo1");
 // console.log(document.getElementsByTagName('div')[2]);
 
 // let a=document.querySelector(".btn");
@@ -118,7 +115,7 @@
 
 // let age=56;
 // let result=(age>=18) ?((age>25) ? "can vote and drink":"can vote"):"can not vote";
-// document.write(result); 
+// document.write(result);
 
 // function factorial(number){
 //     if(number==1)
@@ -136,14 +133,14 @@
 //     let result=number*numbers[i]
 //     i++
 //     if(i%2==0)
-//     document.write(`${number}*${i}=${result}<br>`) 
+//     document.write(`${number}*${i}=${result}<br>`)
 // }
 
 // let x=5;
 // let i=1;
 // while(i<=10){
 //    let result=i*x
-   
+
 //    document.writeln(`${x}*${i}=${result}<br>`)
 //    i++
 // }
@@ -175,8 +172,8 @@
 // }
 // p1=new person('alan', '24' ,'male');
 
-// p1.display()                       
-     
+// p1.display()
+
 // for in loop
 // let person={
 //     fristname:'john',
@@ -185,22 +182,22 @@
 //     gender: 'male',
 // }
 // for (let key in person) {
-//     document.write(`${key} =  ${person[key]}  <br>`)        
-//     }     
+//     document.write(`${key} =  ${person[key]}  <br>`)
+//     }
 
 //  for of loop
 // let names=[1,3,4,5,2];
 
 // for (const element of names) {
-//     document.writeln(element+'<br>')    
+//     document.writeln(element+'<br>')
 // }
 
-// let str='javascript'   ;
+// let ḍ='javascript'   ;
 // text="";
 // for (const element of str) {
 //     text += element +'-'
 // }
-// document.writeln(text)        
+// document.writeln(text)
 
 // for each
 // let arr=[11,12,13,14,15];
@@ -209,38 +206,38 @@
 
 // function myfunction(value, index, array){
 //     arr1.push(value)
-// }   
+// }
 // document.write(arr)
-// document.writeln(arr1)               
-                                            
+// document.writeln(arr1)
+
 // let str=[1,2,3,4,5,6 ,7];
 // let str1=[]
 
 // str.forEach((value)=>str1.push(value))
 // function myfunction(value){
 //     str1.push(value)
-// } 
+// }
 // document.writeln(str1+'<br>')
-// document.writeln(str)    
+// document.writeln(str)
 
 // let array=[1,2,3,4,2];
 // let set1 =new Set();
 // array.forEach((item)=> {
 //     item=item+10;
 //     set1.add(item )
-// })                      
+// })
 // set1.add(7)
 // set1.add(9)
 // console.log(set1)
-                       
+
 // let map1=new Map()
 // map1.set(1, 'one');
 // map1.set(2, 'two')
 // map1.set(3, 'three')
 
 // // document.writeln(map1.get(1))
-// // map1.delete(2)      
-// // map1.clear()   
+// // map1.delete(2)
+// // map1.clear()
 // // document.writeln(...map1 +'<br>')
 // map1.forEach(maplist)
 // function maplist(value,key){
@@ -248,7 +245,6 @@
 // }
 // document.writeln(...map1.values())
 
-      
 // let a=document.querySelector('#box');
 // let b=document.querySelector('btn');
 
@@ -272,10 +268,10 @@
 // }else{
 //     document.writeln('select a payment method')
 // }
-// }                  
+// }
 
 // let label=document.writeln('#label')
-   
+
 // function person(fristname,lastname){
 //     this.fristname=fristname
 //     this.lastname=lastname;
@@ -295,7 +291,6 @@
 // Object.setPrototypeOf(person.prototype, player.prototype)
 // document.writeln(player1.display())
 
-      
 // sum(2,3 , displaydom)
 
 // function sum(x,y ,callback){
@@ -305,45 +300,33 @@
 
 // function displayconsole(output){
 //     console.log(output)
-// }  
+// }
 // function displaydom(output){
-//     text.innerHTML=output 
-// }              
-    
+//     text.innerHTML=output
+// }
+
 // let str='apple';
 
 // let x=str.length
 
 // for(let i=x-1; i>=0; i--){
 //     document.writeln(typeof str[i])
-// }  
-
-               
-
-
-
-
+// }
 
 //   input => [[1, 2], [3, 4]]
 //   output => [{x: 1, y: 2}, ...]
- 
-
-
-
 
 // let array=[[1,2],[3,4]];
 
-// let x=array.flat() 
+// let x=array.flat()
 // function subarray(){
 //     let x =array[0][0]
 //     document.writeln(x);
 // }
 // subarray()
 
-
 // let array=[[1,2],[3,4]];
 // let obj=Object.array
-
 
 // let x=array.slice(0)
 // let y=array.splice(1)
@@ -356,8 +339,6 @@
 // document.writeln(x)
 // document.writeln(y)
 
-   
-
 // function ran(){
 //     return Math.floor(Math.random()*10)
 // }
@@ -365,9 +346,8 @@
 //     document.writeln(ran()+'<br>')
 // }
 
-
 // function check(num1,num2){
-    
+
 //     if(num1==100|| num2==100 || num1+num2==100){
 //     document.writeln('the condition is True')
 //     }
@@ -392,14 +372,10 @@
 //     let result=number*numbers[i]
 //     i++
 //     if(i%2==0)
-//     console.log(`${number}*${i}=${result}<br>`) 
-
+//     console.log(`${number}*${i}=${result}<br>`)
 
 // let str=(String.fromCharCode(69))
 // console.log(str)
-   
-
-
 
 // let date=new Date()
 
@@ -412,7 +388,6 @@
 // }
 
 // console.log(formatdate(date))
-
 
 // let move=((str)=>{
 //     return str
@@ -441,7 +416,6 @@
 //     let result=allData.map((X)=> X.name)
 //     console.log(result)
 
-    
 //     let newArray=allData.map((x)=>({name:x.name , salary: x.salary}))
 //     console.log((newArray))
 //     let taxed=0.10
@@ -471,9 +445,7 @@
 // }
 // productfetch()
 
-
 //------------------------------------------------------------------------------------------------------------------------
-
 
 // let a=[[1,2,3],[3,2,1]]
 // let b=[[4,5,6],[6,5,4]]
@@ -532,13 +504,34 @@
 
 //sdfew  sdfew   sdfewdfew
 
-function gcd(a,b){
-    while(b!==0){
-        let temp=b;
-        b=a%b;
-        a=temp
+// function gcd(a,b){
+//     while(b!==0){
+//         let temp=b;
+//         b=a%b;
+//         a=temp
+//     }
+//     return a
+// }
+
+// function smallestMiss(arr){
+//    let num=0
+//    while(arr.includes(num)){
+//       num++
+//    }
+//    return num
+// }
+// console.log(smallestMiss([-1,0,1,2,3,5,6,8]))
+
+let num=6
+let sum=0
+for(let i=0; i<num; i++){
+    if(num%i==0){
+        sum+=i
     }
-    return a
 }
-console.log(gcd(42, 18))
-//sdfewsdfew
+if(num==sum){
+    console.log('per')
+}else{
+    console.log('not')
+}
+//hukjhukjh

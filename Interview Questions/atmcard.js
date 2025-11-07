@@ -6,7 +6,8 @@ let result=input.map((x)=>{
         mask+="*"
     }   
     mask+=x.slice(-4)
-    return mask}
+    return mask
+}
 )
 console.log(result)
 
