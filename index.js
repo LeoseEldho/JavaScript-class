@@ -502,36 +502,49 @@
 
 // drawCenterPyramid(5);
 
-//sdfew  sdfew   sdfewdfew
-
-// function gcd(a,b){
-//     while(b!==0){
-//         let temp=b;
-//         b=a%b;
-//         a=temp
+// let a=[5,2,9,1,6,3]
+// function quicksort(a,left,right){
+//     if(left>= right)return
+//     let pivot=a[right]
+//     let i=left-1
+//     for(let j=left;j<right;j++){
+//         if(a[j]<pivot){
+//             i++
+//             let temp=a[i]
+//             a[i]=a[j]
+//             a[j]=temp
+//         }
 //     }
-//     return a
+//     // kjhnwer32    ;
+//     let temp=a[i+1]
+//     a[i+1]=a[right]
+//     a[right]=temp
+//     let pivotIndex=i+1
+//     quicksort(a,left,pivotIndex-1)
+//     quicksort(a,pivotIndex+1,right)
+//    return a
 // }
+// console.log(quicksort(a,0,a.length-1))
 
-// function smallestMiss(arr){
-//    let num=0
-//    while(arr.includes(num)){
-//       num++
-//    }
-//    return num
-// }
-// console.log(smallestMiss([-1,0,1,2,3,5,6,8]))
+// sdfewsdfewfesdfewsdfewsdfewsdfew
 
-let num=6
-let sum=0
-for(let i=0; i<num; i++){
-    if(num%i==0){
-        sum+=i
+let sentence = "The world in full of carssss";
+let count=0
+let maxno=0
+
+for(let i=0; i<sentence.length; i++){
+    if(sentence[i]!==' '){
+        count++
+    }else{
+        if(count>maxno){
+            maxno=count
+        }
+        count=0
     }
 }
-if(num==sum){
-    console.log('per')
-}else{
-    console.log('not')
+if(count>maxno){
+    maxno=count
 }
-//hukjhukjh
+console.log(count)
+
+
