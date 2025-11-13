@@ -47,4 +47,10 @@
 
 
 
-//dfg
+//undefined vs not defined
+// var a
+// console.log(a)- undifined
+// a=2
+// console.log(a) -2
+// a='string'
+// console.log(a) -string

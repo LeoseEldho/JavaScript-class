@@ -526,25 +526,22 @@
 // }
 // console.log(quicksort(a,0,a.length-1))
 
-// sdfewsdfewfesdfewsdfewsdfewsdfew
+// sdfew  sdfewsdfewvbcvbcvbgfgdfgd
 
-let sentence = "The world in full of carssss";
-let count=0
-let maxno=0
-
-for(let i=0; i<sentence.length; i++){
-    if(sentence[i]!==' '){
-        count++
-    }else{
-        if(count>maxno){
-            maxno=count
+function intersection(a,b) {
+  let result = [];
+  for (let i = 0; i < a.length; i++) {
+    for(let j=0; j<b.length; j++){
+        let found=false
+        if(a[i]==b[j]){
+            found=true
+        console.log(a[i],b[j])
+            
         }
-        count=0
+        }
     }
-}
-if(count>maxno){
-    maxno=count
-}
-console.log(count)
+      return result;
+  }
 
+console.log(intersection([1, 2, 3], [5, 4, 3]));
 
