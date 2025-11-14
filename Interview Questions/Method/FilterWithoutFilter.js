@@ -15,7 +15,7 @@ function myFilter(number,condition){
 }
 
 console.log(even)
-
+//--------------------------------------------------------------------------
 
 let num=[{
     name:'leos',
@@ -36,3 +36,17 @@ function myFilter(num ,callback){
     return result;
 }
 console.log(n)
+
+//-----------------------------------------------------------------------------------------
+function filter(arr) {
+  return function (callback) {
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (callback(arr[i])) {
+        result[result.length] = arr[i];
+      }
+    }
+      return result
+  };
+}
+console.log(filter([1, 2, 3, 4])(n => n > 2));

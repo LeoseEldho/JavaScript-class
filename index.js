@@ -526,22 +526,20 @@
 // }
 // console.log(quicksort(a,0,a.length-1))
 
-// sdfew  sdfewsdfewvbcvbcvbgfgdfgd
+// --------------------------------------------
 
-function intersection(a,b) {
-  let result = [];
-  for (let i = 0; i < a.length; i++) {
-    for(let j=0; j<b.length; j++){
-        let found=false
-        if(a[i]==b[j]){
-            found=true
-        console.log(a[i],b[j])
-            
-        }
-        }
-    }
-      return result;
+function mergeArray(arr1,arr2){
+  let result=[]
+  for(let i=0; i<arr1.length; i++)
+    for(let j=0; j<arr2.length; j++){
+  if(arr1[i]==arr2[j]){
+    console.log(arr1[i])
+  }
   }
 
-console.log(intersection([1, 2, 3], [5, 4, 3]));
+}
+console.log(mergeArray([1,2,3,4], [3,4,5,6]))
 
+//      rgsdfgsdfg
+
+//dfgdfghdfgh  mbhmbhmnb nbhmn mbhmnbhmn bvgnb
