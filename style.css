@@ -1,18 +1,23 @@
-/* *{
-    padding: 0%;
-    box-sizing: border-box;
-    margin: 0;
-} */
-
-#div{
-    width: 100px;
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+.box{
     height: 100px;
-    border: 1px solid ;
-    position: relative;
-    background-color: darkcyan;
-}       
-#canvas{
-    border: 1px solid black;
-}       
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: repeat(6,150px);
+    gap: 10px;
+}
+/* sdfew */
+.box div{
+    background: #3bbced;
+    padding: 30px;
+}
+.box div:nth-child(even){
+    background: #777;
+}
 
-        
+/*          dgresdfsfewsdgffhghtytghytfghfytgf */

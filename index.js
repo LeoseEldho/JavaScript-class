@@ -528,18 +528,13 @@
 
 // --------------------------------------------
 
-function mergeArray(arr1,arr2){
+let obj=[['name','leo'],['age','21'],['job','dev']]
+function toObj(obj){
   let result=[]
-  for(let i=0; i<arr1.length; i++)
-    for(let j=0; j<arr2.length; j++){
-  if(arr1[i]==arr2[j]){
-    console.log(arr1[i])
+  for(let i=0; i<obj.length; i++){
+    result[obj[i][0]]=obj[i][1]
   }
-  }
-
+  return result
 }
-console.log(mergeArray([1,2,3,4], [3,4,5,6]))
-
-//      rgsdfgsdfg
-
-//dfgdfghdfgh  mbhmbhmnb nbhmn mbhmnbhmn bvgnb
+console.log(toObj(obj))
+//sdfjewilj

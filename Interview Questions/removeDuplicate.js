@@ -16,6 +16,10 @@ for(let i=0; i<arr.length; i++){
 console.log(result)
 
 
+
+
+
+
 const duplicate=(arr)=>{
     let result=[];
     for(let item of arr){
