@@ -528,13 +528,6 @@
 
 // --------------------------------------------
 
-let obj=[['name','leo'],['age','21'],['job','dev']]
-function toObj(obj){
-  let result=[]
-  for(let i=0; i<obj.length; i++){
-    result[obj[i][0]]=obj[i][1]
-  }
-  return result
-}
-console.log(toObj(obj))
-//sdfjewilj
+
+
+// b xszdfxcgghfghgh     sdfew
