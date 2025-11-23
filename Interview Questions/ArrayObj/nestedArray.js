@@ -4,7 +4,6 @@ const arr = [
   ["age", 25],
   ["address", ["city", "Kochi", "state", "Kerala"]],
 ];
-//sdfewsfewsewsfdewsdfewsdfwsdfewasf
 function arrayToObject(arr){
     let obj={}
     if(typeof arr[0] === 'string' && Array.isArray(arr[1])){
