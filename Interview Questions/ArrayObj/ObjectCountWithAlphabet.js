@@ -11,5 +11,3 @@ function arrayObj(arr){
 }
 
 console.log(arrayObj(arr))
-
-console.log(arr[0][0])

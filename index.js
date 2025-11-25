@@ -527,25 +527,19 @@
 // console.log(quicksort(a,0,a.length-1))
 // sdfewasdfw
 // --------------------------------------------
-const arr = [
-  { name: "Alice", dept: "IT", role: "Developer" },
-  { name: "Bob", dept: "IT", role: "Tester" },
-  { name: "Charlie", dept: "HR", role: "Recruiter" },
-  { name: "David", dept: "IT", role: "Developer" }
-];
-function arrObjAdd(arr){
-    let result={}
-    for(let i=0; i<arr.length; i++){
-        let {name,dept,role}=arr[i]
-        if(!result[arr[dept]]){
-            result[arr[dept]]={}
+function arrFlatten(arr){
+    let result=[]
+    function flat(a){
+    for(let i=0; i<a.length; i++){
+        if(Array.isArray(a[i])){
+            flat(a[i])
+        }else{
+            result[result.length]=a[i]
         }
-        if(!result[dept][role]){
-            result[dept][role]=[]
-        }
-        result[dept][role][result[dept][role].length]=arr[name]
     }
+    }
+    flat(arr)
     return result
 }
-// v asdfewasdfew
-console.log(arrObjAdd(arr))
+console.log(arrFlatten([1, [2, [3, 4]], 5]));
+// fgjhkjlk;l
