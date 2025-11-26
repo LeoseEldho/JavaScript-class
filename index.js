@@ -526,20 +526,22 @@
 // }
 // console.log(quicksort(a,0,a.length-1))
 // sdfewasdfw
-// --------------------------------------------
-function arrFlatten(arr){
-    let result=[]
-    function flat(a){
-    for(let i=0; i<a.length; i++){
-        if(Array.isArray(a[i])){
-            flat(a[i])
-        }else{
-            result[result.length]=a[i]
-        }
-    }
-    }
-    flat(arr)
-    return result
+// ---------------------------------------------------------------------------------------------------------------------------
+//  const obj ={user:{name:'Tom',address:{city:'ny',pin:1001}}}
+// // output = [['user.name','tom'],['user.address.city','ny'],['user.address.pin',1001]]
+// function nestObj(obj){
+//     let result=[]
+//     for(let key in obj){
+//         console.log(key[name])
+//     }
+// }
+// console.log(nestObj(obj))
+
+function time(callback,sec){
+    setTimeout(() => {
+        callback()
+    }, sec);
 }
-console.log(arrFlatten([1, [2, [3, 4]], 5]));
-// fgjhkjlk;l
+let result=time(()=> console.log('hai hu'), 3000)
+console.log(result)
+//sdfew
