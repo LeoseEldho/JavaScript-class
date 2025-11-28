@@ -536,12 +536,13 @@
 //     }
 // }
 // console.log(nestObj(obj))
-
-function time(callback,sec){
-    setTimeout(() => {
-        callback()
-    }, sec);
+//   
+setTimeout(()=>{
+    console.log('Timer')
+},5000)
+function x(y){
+    console.log('HIII')
+ y()
 }
-let result=time(()=> console.log('hai hu'), 3000)
-console.log(result)
-//sdfew
+
+x(function y(){console.log('www')})
