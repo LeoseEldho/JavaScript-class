@@ -447,21 +447,6 @@
 
 //------------------------------------------------------------------------------------------------------------------------
 
-// let a=[[1,2,3],[3,2,1]]
-// let b=[[4,5,6],[6,5,4]]
-
-// let addMatrix=(a,b)=>{
-//     let result=[]
-//     for(let i=0; i<a.length; i++){
-//         result[i]=[]
-//         for(j=0; j<a[i].length; j++){
-//             result[i][j]=a[i][j]+b[i][j]
-//         }
-//     }
-//     return result
-// }
-// console.log(addMatrix(a,b))
-
 //.................................................
 // let n=27
 // function perfectNo(n){
@@ -536,13 +521,24 @@
 //     }
 // }
 // console.log(nestObj(obj))
-//   
-setTimeout(()=>{
-    console.log('Timer')
-},5000)
-function x(y){
-    console.log('HIII')
- y()
+// function sortArray(arr,callback){
+//   let result =[]
+//   for(let i=0; i<arr.length; i++){
+//      for(let j=0; j<arr.length; j++){
+//       result=callback(arr[i],arr[j])
+//      }
+//   }
+//   return result
+// }
+// console.log(sortArray([5,2,8,1], (a,b)=>a-b))
+// asdfsdfew
+
+
+function fetchData(callback) {
+  setTimeout(() => {
+    callback("Data received from server");
+  }, 3000);
 }
 
-x(function y(){console.log('www')})
+fetchData(message => console.log(message));
+// dfdfgrsdf

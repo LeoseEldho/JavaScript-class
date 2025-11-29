@@ -1,13 +1,13 @@
- function createMultiplier(x){
-    return function (b){
-      return x*b
+function createMultiplier(a){
+    return function(b){
+        return a*b
     }
 }
 
-const triple=createMultiplier(5)
+// const double=createMultiplier(2)
+// const triple=createMultiplier(3)
 // const quadrable=createMultiplier(4)
-// console.log(double(5))
-console.log(triple(5))
+//------------------------------
+// console.log(double(2))
+// console.log(triple(5))
 // console.log(quadrable(5))
-// console.log(double(10))
-// console.log(triple(10))

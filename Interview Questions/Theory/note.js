@@ -5,6 +5,7 @@
 //* single-threaded language
 // Can only execute one command at a time
 
+// js are using (JIT) compilation --Just-In-Time  
 
 // Callstack
 // it is used to manage the execution context of the global exection context.
