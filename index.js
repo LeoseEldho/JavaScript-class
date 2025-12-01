@@ -531,14 +531,6 @@
 //   return result
 // }
 // console.log(sortArray([5,2,8,1], (a,b)=>a-b))
-// asdfsdfew
 
 
-function fetchData(callback) {
-  setTimeout(() => {
-    callback("Data received from server");
-  }, 3000);
-}
-
-fetchData(message => console.log(message));
-// dfdfgrsdf
+//  sdfgsdfgresdfgresdfgre
