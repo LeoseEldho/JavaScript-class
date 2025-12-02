@@ -1,3 +1,5 @@
+{
+  "product":
 [
   { "id": 1, "name": "Alice", "age": 25, "role": "developer", "salary": 5000 },
   { "id": 2, "name": "Bob", "age": 30, "role": "designer", "salary": 4000 },
@@ -5,4 +7,4 @@
   { "id": 4, "name": "David", "age": 28, "role": "developer", "salary": 5500 },
   { "id": 5, "name": "Eve", "age": 22, "role": "intern", "salary": 2000 }
 ]
-
+}
