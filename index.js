@@ -532,58 +532,5 @@
 // }
 // console.log(sortArray([5,2,8,1], (a,b)=>a-b))p
 
-const cart = ["shoe", "pant", "shirt"];
-// function createOrder(cart) {
-//   const promise = new Promise(function (resolve, reject) {
-//     if (!validateCate(cart)) {
-//       reject("Error");
-//       }
-//       const orderId = '1234'
-//       if (orderId) {
-//           setTimeout(() => {
-//               resolve(orderId)
-//             },5000)
-//       }
-//   });
-//   return promise;
-// }
-// function validateCate(cart) {
-//     return true
-// }
 
-// const promise = createOrder(cart)
-
-// promise.then(function (orderId) {
-//     console.log(orderId)
-// })
-// .catch((error)=>console.log(error))
-
-// let greet = (name,callback) => {
-//   console.log("Hello", name)
-//   callback()
-// }
-// greet('john',()=>console.log('object'))
-
-// let calculate=(a, b, callback)=>{
-//   return callback(a,b)
-// }
-// console.log(calculate(8, 2, (a,b)=>a+b))
-
-// function download(data,callback) {
-//   console.log("Download file.jpg")
-//   setTimeout(() => {
-//     callback()
-//   },2000)
-// }
-// download('data',()=>console.log('download Complete'))
-
-function processArray(arr, callback) {
-  for (let i = 0; i < arr.lenght; i++){
-    callback(arr[i],i,arr)
-  }
-}
-
-processArray([1,2,3,4],function (num) {
-  console.log(num*2)
-} )
-// sdfsdfewsdfew
+// sdfsdf
