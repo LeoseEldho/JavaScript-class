@@ -14,7 +14,6 @@ function intersection(a,b) {
 
 console.log(intersection([1, 2, 3, 3], [2, 3, 4]));
 
-
 function intersection(a, b) {
     let result = []
     for (let i = 0; i < a.length; i++) {
