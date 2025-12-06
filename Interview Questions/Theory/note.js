@@ -1,11 +1,11 @@
-//java Script is an 
-//* synchronous 
+//java Script is an
+//* synchronous
 // can only execute one command at a time in an specific order
 
 //* single-threaded language
 // Can only execute one command at a time
 
-// js are using (JIT) compilation --Just-In-Time  
+// js are using (JIT) compilation --Just-In-Time
 
 // Callstack
 // it is used to manage the execution context of the global exection context.
@@ -55,3 +55,11 @@
 // console.log(a) -2
 // a='string'
 // console.log(a) -string
+
+// let obj1 = {
+//     a: 2,
+//     b: 3
+// }
+// let obj2 = obj1;
+// obj1.c=8
+// console.log(obj2,obj1)

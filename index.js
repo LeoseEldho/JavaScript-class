@@ -532,4 +532,39 @@
 // }
 // console.log(sortArray([5,2,8,1], (a,b)=>a-b))p
 
-// sdfgsdfgsdfgsdfg
+// const obj ={user:{name:'Tom',address:{city:'Brazil',pin:1001}}}
+// function objArray(obj, parent = '', result = [],i=0) {
+//     for (let key in obj) {
+//         let fullkey = parent ? `${parent}.${key}` : key
+//         if (typeof (obj[key]) == 'object'&&obj[key]!==null) {
+//             objArray(obj[key], fullkey, result, i)
+//             console.log(obj[key])
+//         } else {
+//             result[i] = []
+//             result[i][0] = fullkey
+//             result[i][1] = obj[key]
+//             i++
+//         }
+//     }
+//     return result
+// }
+// console.log(objArray(obj))
+
+let number = 15
+function revNo(n) {
+    let temp=n
+    let sum = 0;
+    while (n > 0) {
+        let last = n % 10;
+        sum += last ** 3
+        n=Math.floor(n/10)
+    }
+    if (sum == temp) {
+        console.log('true')
+    } else {
+        console.log('false')
+    }
+    
+}
+revNo(number)
+//[ asdfasdfasdf
