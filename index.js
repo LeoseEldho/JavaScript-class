@@ -550,21 +550,11 @@
 // }
 // console.log(objArray(obj))
 
-let number = 15
-function revNo(n) {
-    let temp=n
-    let sum = 0;
-    while (n > 0) {
-        let last = n % 10;
-        sum += last ** 3
-        n=Math.floor(n/10)
-    }
-    if (sum == temp) {
-        console.log('true')
-    } else {
-        console.log('false')
-    }
-    
+function arrObj(arr) {
+  let result = {}
+  for (let i = 0; i < arr.length; i++){
+    result[i]=arr[i]
+  }
+  return result;
 }
-revNo(number)
-//[ asdfasdfasdf
+console.log(arrObj(['apple','orange','banana']))
