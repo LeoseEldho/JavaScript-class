@@ -13,3 +13,4 @@ function nonRepeat(n) {
     return result
 }
 console.log(nonRepeat(input))
+// dsfasdfasdfasdfsdfsdsdfasdf

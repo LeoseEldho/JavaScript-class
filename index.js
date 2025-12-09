@@ -549,12 +549,3 @@
 //     return result
 // }
 // console.log(objArray(obj))
-
-function arrObj(arr) {
-  let result = {}
-  for (let i = 0; i < arr.length; i++){
-    result[i]=arr[i]
-  }
-  return result;
-}
-console.log(arrObj(['apple','orange','banana']))
