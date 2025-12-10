@@ -1,18 +1,15 @@
-let input='aabbcddeggjffi'
+let input='aabbcdde'
 
 function nonRepeat(n) {
     let result = {}
-    let output=[]
     for (let i = 0; i < n.length; i++){
         result[n[i]]=(result[n[i]]||0)+1
     }
-    let found = false;
     for (let j = 0; j < n.length; j++){
         if (result[n[j]] == 1) {
-            output[output.length]=n[j]
-            
+            return n[j]
         }
     }
-    return output
+    return result
 }
 console.log(nonRepeat(input))

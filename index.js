@@ -549,3 +549,24 @@
 //     return result
 // }
 // console.log(objArray(obj))
+// for (let i = 5; i >=0; i++){
+//     let mask = ""
+//     for (let k = 0; k <= 5; k++){
+//         mask+="*"
+//     }
+//     console.log(mask)
+// }
+
+//  asdfasdfsdfasdfasdfsdfsdfsdf
+
+const numbers = [
+  [1, 2],
+  [3, 4],
+  [5, 6]
+];
+for (let i = 0; i <1; i++){
+    for (let j = 0; j <=1; j++){
+        console.log(numbers[i],numbers[j])
+    }
+}
+// wrtssfgsrtgfdsgsfdgsfgsfgdfgesg
