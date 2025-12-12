@@ -8,3 +8,14 @@ for (let i = 1; i <=3; i++){
     }
     console.log( mask)
 }
+// 
+let counter = 1;
+for (let i = 1; i <=4; i++){
+  let mask=''
+  for (let j = 1; j <=i; j++){
+    mask += counter+" "
+    counter++
+  }
+    console.log(mask)
+
+}

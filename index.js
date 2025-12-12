@@ -557,16 +557,16 @@
 //     console.log(mask)
 // }
 
-//  asdfasdfsdfasdfasdfsdfsdfsdf
 
-const numbers = [
-  [1, 2],
-  [3, 4],
-  [5, 6]
-];
-for (let i = 0; i <1; i++){
-    for (let j = 0; j <=1; j++){
-        console.log(numbers[i],numbers[j])
-    }
+let counter = 1;
+for (let i = 1; i <=4; i++){
+  let mask=''
+  for (let j = 1; j <=i; j++){
+    mask += counter+" "
+    counter++
+  }
+    console.log(mask)
+
 }
-// wrtssfgsrtgfdsgsfdgsfgsfgdfgesg
+
+// asdfsdfadfasdfsdfasd
