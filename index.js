@@ -556,17 +556,20 @@
 //     }
 //     console.log(mask)
 // }
-
-
-let counter = 1;
-for (let i = 1; i <=4; i++){
-  let mask=''
-  for (let j = 1; j <=i; j++){
-    mask += counter+" "
-    counter++
-  }
-    console.log(mask)
-
+let num = 153; 
+function armStrong(num) {
+    let temp=num
+    let sum = 0
+    while (num > 0) {
+        let last = num % 10;
+        sum += last ** 3;
+        num = Math.floor(num / 10);
+    }
+    if (temp == sum) {
+        console.log('y')
+    } else {
+        console.log('n')
+    }
 }
-
-// asdfsdfadfasdfsdfasd
+armStrong(num)
+// asdfasdfasdfasd

@@ -9,4 +9,4 @@ let sortArray=(arr,callback)=>{
   }
   return sort;
 }
-console.log(sortArray([5,2,8,1],(a,b)=>a-b))
+console.log(sortArray([5, 2, 8, 1], (a, b) => a - b))
