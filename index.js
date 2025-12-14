@@ -556,20 +556,4 @@
 //     }
 //     console.log(mask)
 // }
-let num = 153; 
-function armStrong(num) {
-    let temp=num
-    let sum = 0
-    while (num > 0) {
-        let last = num % 10;
-        sum += last ** 3;
-        num = Math.floor(num / 10);
-    }
-    if (temp == sum) {
-        console.log('y')
-    } else {
-        console.log('n')
-    }
-}
-armStrong(num)
-// asdfasdfasdfasd
+// asdfasf
