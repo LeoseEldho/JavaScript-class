@@ -556,4 +556,18 @@
 //     }
 //     console.log(mask)
 // }
-// asdfasf
+
+// sdfasdfasdfsdffe
+let m = [[1, 2, 4], [2, 3, 6], [5, 9, 0]];
+function addMatrix(m) {
+  let sum = 0
+  for (let i = 0; i < m.length; i++){
+    for (let j = 0; j < m[i].length; j++){
+      sum += m[i][j]
+      console.log(sum)
+    }
+  }
+  return sum;
+}
+console.log(addMatrix(m))
+// asdfasdfasdfasdf
