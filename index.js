@@ -556,21 +556,9 @@
 //     }
 //     console.log(mask)
 // }
-
-function sum3(nums, k) {
-  let obj = {}
-  for (let i = 0; i < nums.length; i++){
-    let need = k - nums[i];
-  
-    if (obj.hasOwnProperty(need)) {
-      return[obj[need], i]
-    } else {
-      obj[nums[i]] = i
-      // console.log(obj,'I')
-    }
-  }
-  return "no sum"
+function removeDuplicates(nums) {
+  let set = new Set([...nums])
+  return [...set]
 }
-console.log(sum3([3, 2, 3, 4], 6));
-
-// asdfasdf
+console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4]))
+//  \\  clear 
