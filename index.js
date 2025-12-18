@@ -556,9 +556,12 @@
 //     }
 //     console.log(mask)
 // }
-function removeDuplicates(nums) {
-  let set = new Set([...nums])
-  return [...set]
+
+function factorial(n) {
+  if (n <= 0) {
+    return 1
+  }
+  return n*factorial(n-1)
 }
-console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4]))
-//  \\  clear 
+console.log(factorial(4))
+// asdfasasdfasdafdfs
