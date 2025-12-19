@@ -557,11 +557,37 @@
 //     console.log(mask)
 // }
 
-function factorial(n) {
-  if (n <= 0) {
-    return 1
-  }
-  return n*factorial(n-1)
+function search(arr, t) {
+  let left = 0;
+  let right = arr.length -1
+  while (left <= right) {
+    let midd = Math.floor((left + right )/2)
+    if (t == arr[midd]) {
+      return midd;
+    }
+    if (t < arr[midd]) {
+      right=midd-1
+    } else {
+      left=midd+1
+    }
+ }
+  return -1
 }
-console.log(factorial(4))
-// asdfasasdfasdafdfs
+console.log(search([-5, 2, 10, 4, 6], 10))
+console.log(search([-5,2,10,4,6], 6))
+console.log(search([-5,2,10,4,6], 20))
+
+//   asdfasdfasdf
+Typing : [46 wpm] [1804 wpm]
+Focus : [10 hr 23 min] [1456 hr 42 min]
+CT : [08 hr 55 min] [1272 hr 20 min]
+ACT : [08 hr 21 min] [1120 hr 45 min]
+HTML : [00] [3588]
+CSS : [00] [16719]
+JS : [367] [24446]
+JSON : [00] [1196]
+REACT JS: [00] [5354]
+REACT TS: [00] [439]
+TS :       [00] [10]
+Total: [367][51752];
+// sdfgsdfgsdfg
