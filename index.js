@@ -557,22 +557,5 @@
 //     console.log(mask)
 // }
 
-let str="i love javascript "
-function wordCount(str) {
-  let word = ''
-  let count=0
-  for (let i = 0; i < str.length; i++){
-    if (str[i] !== ' ') {
-      word += str[i]
-    } else {
-      if (word != ' ') {
-        console.log(word)
-        count++
-      }
-      word=""
-    }
-  }
-  return count
-}
-console.log(wordCount(str))
-//   dfgsdfgsdfgsdfgsdfgsdfg
+
+//   asdfasdfasdfasdf
