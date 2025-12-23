@@ -557,5 +557,18 @@
 //     console.log(mask)
 // }
 
-
-//   asdfasdfasdfasdf
+function quicksort(arr) {
+    let pivot = arr[arr.length - 1];
+    let left = [];
+    let right = [];
+    for (let i = 1; i < arr.length - 1; i++){
+        if (pivot > arr[i]) {
+            right.push(arr[i])
+        } else {
+            left.push(arr[i])
+        }
+    }
+    return [...quicksort(right),pivot,...quicksort(left)]
+}
+console.log(quicksort([2,3,1,5,2,6]))
+//asdfasdfasdfew

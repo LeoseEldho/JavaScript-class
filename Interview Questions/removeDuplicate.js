@@ -18,6 +18,20 @@ console.log(result)
 
 
 
+function removeDuplicates(arr) {
+    let result=[]
+    if (arr.length === 0) return 0;
+    result[0]=arr[0]
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] !== result[result.length-1]) {
+            result[result.length]=arr[i]
+        }
+    }
+    return result
+}
+
+let nums = [1, 1, 2, 2, 3, 3, 4];
+console.log(removeDuplicates(nums))
 
 
 const duplicate=(arr)=>{
