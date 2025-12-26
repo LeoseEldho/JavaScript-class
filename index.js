@@ -556,19 +556,25 @@
 //     }
 //     console.log(mask)
 // }
-
-function quicksort(arr) {
-    let pivot = arr[arr.length - 1];
-    let left = [];
-    let right = [];
-    for (let i = 1; i < arr.length - 1; i++){
-        if (pivot > arr[i]) {
-            right.push(arr[i])
-        } else {
-            left.push(arr[i])
+const arr = [
+  { name: "Alice", dept: "IT", role: "Developer" },
+  { name: "Bob", dept: "IT", role: "Tester" },
+  { name: "Charlie", dept: "HR", role: "Recruiter" },
+  { name: "David", dept: "IT", role: "Developer" }
+];
+function arrObj(arr) {
+    let obj = {}
+    for (let i = 0; i < arr.length; i++){
+        const {name,dept,role}=arr[i]
+        if (!obj[dept]) {
+            obj[dept]={}
         }
+        if (!obj[dept][role]) {
+            obj[dept][role]=[]
+        }
+        obj[dept][role][obj[dept][role].length]=name
     }
-    return [...quicksort(right),pivot,...quicksort(left)]
+    return obj
 }
-console.log(quicksort([2,3,1,5,2,6]))
-//asdfasdfasdfew
+console.log(arrObj(arr))
+// 
