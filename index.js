@@ -556,25 +556,25 @@
 //     }
 //     console.log(mask)
 // }
-const arr = [
-  { name: "Alice", dept: "IT", role: "Developer" },
-  { name: "Bob", dept: "IT", role: "Tester" },
-  { name: "Charlie", dept: "HR", role: "Recruiter" },
-  { name: "David", dept: "IT", role: "Developer" }
-];
-function arrObj(arr) {
-    let obj = {}
-    for (let i = 0; i < arr.length; i++){
-        const {name,dept,role}=arr[i]
-        if (!obj[dept]) {
-            obj[dept]={}
-        }
-        if (!obj[dept][role]) {
-            obj[dept][role]=[]
-        }
-        obj[dept][role][obj[dept][role].length]=name
+
+
+
+class circularQueue{
+    constructor() {
+        let item = {};
+        let front = 0
+        let rear = 0;
     }
-    return obj
+    queue(element) {
+        this.item=element
+    }
+    print() {
+        console.log(this.item)
+    }
 }
-console.log(arrObj(arr))
-// 
+circularQueue.queue(10)
+circularQueue.queue(23)
+circularQueue.queue(50)
+print()
+
+// sdfasdfasdfasdasdasdfasdfasdf
