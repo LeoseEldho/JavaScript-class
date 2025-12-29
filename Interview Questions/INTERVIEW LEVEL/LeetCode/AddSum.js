@@ -1,4 +1,23 @@
 
+let input = [1, 2, 3, 4, 6]
+function findSum(arr, t) {
+    let left = 0;
+    let right = arr.length - 1;
+    while (left < right) {
+        let sum = arr[left] + arr[right];
+        if (sum == t) {
+            return [left, right];
+        } else if (sum > t) {
+            right--
+        } else {
+            left++
+        }
+    }
+    return false;
+}
+console.log(findSum(input, 8))
+
+
 // function sum3(nums, k) {
 //   let obj = {}
 //   for (let i = 0; i < nums.length; i++){

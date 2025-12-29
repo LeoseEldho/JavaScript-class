@@ -558,23 +558,4 @@
 // }
 
 
-
-class circularQueue{
-    constructor() {
-        let item = {};
-        let front = 0
-        let rear = 0;
-    }
-    queue(element) {
-        this.item=element
-    }
-    print() {
-        console.log(this.item)
-    }
-}
-circularQueue.queue(10)
-circularQueue.queue(23)
-circularQueue.queue(50)
-print()
-
-// sdfasdfasdfasdasdasdfasdfasdf
+//asdfasdasdasdf
