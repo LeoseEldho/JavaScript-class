@@ -549,14 +549,6 @@
 //     return result
 // }
 // console.log(objArray(obj))
-// for (let i = 5; i >=0; i++){
-//     let mask = ""
-//     for (let k = 0; k <= 5; k++){
-//         mask+="*"
-//     }
-//     console.log(mask)
-// }
 
 
-
-// sadfasdfasdfsdfasdfsdf
+// adsfasdasasdfasdasdfasdf
