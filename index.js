@@ -550,12 +550,17 @@
 // }
 // console.log(objArray(obj))
 
-function removeDupi(str) {
-  let result = ""
-    for (let i = 0; i < str.length; i++){
+// Friends network as adjacency list
 
-    }
-  return result;
+function notZero(arr) {
+  let n = 0;
+  for (let i = 0; i < arr.length; i++){
+      if (arr.includes(n)) {
+    n+=1
+  } else {
+    return n
+  }
+  }
 }
-console.log(removeDupi("ababbcc"));
-// asdfasdfasdfasdfasdasdfsdfasdfadsfasdfasdf
+console.log(notZero([,1,2 ,4,5,6]))
+// asdfasdfasdfasdfasdfadfasdfsfsdfasdfasdfasdfasdf
