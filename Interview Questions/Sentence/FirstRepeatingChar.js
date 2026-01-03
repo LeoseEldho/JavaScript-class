@@ -10,4 +10,4 @@ function fistRepeating(str) {
   }
   return obj
 }
-console.log(fistRepeating("abcac"))
+console.log(fistRepeating("abcac"));

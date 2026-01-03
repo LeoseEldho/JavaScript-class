@@ -550,5 +550,12 @@
 // }
 // console.log(objArray(obj))
 
+function removeDupi(str) {
+  let result = ""
+    for (let i = 0; i < str.length; i++){
 
-// adsfasdasasdfasdasdfasdf
+    }
+  return result;
+}
+console.log(removeDupi("ababbcc"));
+// asdfasdfasdfasdfasdasdfsdfasdfadsfasdfasdf
