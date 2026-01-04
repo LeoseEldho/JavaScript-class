@@ -532,35 +532,24 @@
 // }
 // console.log(sortArray([5,2,8,1], (a,b)=>a-b))p
 
-// const obj ={user:{name:'Tom',address:{city:'Brazil',pin:1001}}}
-// function objArray(obj, parent = '', result = [],i=0) {
-//     for (let key in obj) {
-//         let fullkey = parent ? `${parent}.${key}` : key
-//         if (typeof (obj[key]) == 'object'&&obj[key]!==null) {
-//             objArray(obj[key], fullkey, result, i)
-//             console.log(obj[key])
-//         } else {
-//             result[i] = []
-//             result[i][0] = fullkey
-//             result[i][1] = obj[key]
-//             i++
-//         }
-//     }
-//     return result
-// }
-// console.log(objArray(obj))
 
-// Friends network as adjacency list
-
-function notZero(arr) {
-  let n = 0;
-  for (let i = 0; i < arr.length; i++){
-      if (arr.includes(n)) {
-    n+=1
-  } else {
-    return n
-  }
-  }
+const obj ={user:{name:'Tom',address:{city:'Brazil',pin:1001}}}
+function objArray(obj, parent = '', result = [],i=0) {
+    for (let key in obj) {
+        let fullkey = parent ? `${parent}.${key}` : key
+        if (typeof (obj[key]) == 'object'&&obj[key]!==null) {
+            objArray(obj[key], fullkey, result, i)
+            console.log(obj[key])
+        } else {
+            result[i] = []
+            result[i][0] = fullkey
+            result[i][1] = obj[key]
+            i++
+        }
+    }
+    return result
 }
-console.log(notZero([,1,2 ,4,5,6]))
-// sadasdfasdfasdfasdafasdfasdfasfdasdf
+console.log(objArray(obj)) 
+
+
+//   fhgjkk
