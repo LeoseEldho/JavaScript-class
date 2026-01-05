@@ -61,7 +61,7 @@
 // 4) Given a grid with # block and . empty cells, apply gravity upward(reverse gravity).
 // all blocks move up until they hit another block or the top.
 
-//Example
+// Example
 // input:
 // . . #
 // . # .
