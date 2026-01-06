@@ -8,4 +8,4 @@ function twoArrObj(key){
   }
   return result
 }
-console.log(twoArrObj(key))
+console.log(twoArrObj(key));

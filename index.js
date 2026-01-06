@@ -512,40 +512,6 @@
 // console.log(quicksort(a,0,a.length-1))
 // sdfewasdfw
 // ---------------------------------------------------------------------------------------------------------------------------
-//  const obj ={user:{name:'Tom',address:{city:'ny',pin:1001}}}
-// // output = [['user.name','tom'],['user.address.city','ny'],['user.address.pin',1001]]
-// function nestObj(obj){
-//     let result=[]
-//     for(let key in obj){
-//         console.log(key[name])
-//     }
-// }
-// console.log(nestObj(obj))
-// function sortArray(arr,callback){
-//   let result =[]
-//   for(let i=0; i<arr.length; i++){
-//      for(let j=0; j<arr.length; j++){
-//       result=callback(arr[i],arr[j])
-//      }
-//   }
-//   return result
-// }
-// console.log(sortArray([5,2,8,1], (a,b)=>a-b))p
 
-const obj ={user:{name:'Tom',address:{city:'Brazil',pin:1001}}}
-// output = [['user.name','tom'],['user.address.city','Brazil'],['user.address.pin',1001]]
-function objArray(obj, parent = '', result = [],i=0) {
-    for (let key in obj) {
-        let fullkey = parent ? `${parent}.${key}` : key
-        if (typeof (obj[key]) == 'object') {
-            objArray(obj[key],fullkey,result,i)
-        } else {
-            result[i] = []
-            result[i][0] = fullkey
-            result[i][1] = obj[key]
-            i++
-        }
-    }
-    return result
-}
-console.log(objArray(obj))
+
+// asdfasdfasdfasdfasdfasdfasdf
