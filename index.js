@@ -524,28 +524,8 @@
 // Output
 // a b c d d e
 
-
-function nonRepeatingFixed(s, k) {
-    let freq = {};
-    let start = 0;
-    let result = ""
-    for (let j = 0; j < s.length; j++) {
-        freq[s[j]]=(freq[s[j]]||0)+1
-        if (j - start + 1 === k) {
-            let found = '#';
-            for (let i = start; i <= j; i++) {
-                if (freq[s[i]] === 1) {
-                    found = s[i];
-                    break;
-                }
-            }
-            result += ' '+found;
-            freq[s[start]]--;
-            start++;
-        }
-    }
-    return result;
+function findAverages(arr, k) {
+    
 }
-console.log(nonRepeatingFixed("aabcdbec", 4));
-
-//    sdfsdfsdfsdfsdfasdfsdfsdfsdfsdfasdfasdfasdfasdfsdfsfasdfxczxvzxcvxcvzxcvxcvxccvxcv
+console.log(findAverages([1, 3, 2, 6, -1, 4, 1, 8, 2], 4));
+//sdfgsdfgsdfgsdf
