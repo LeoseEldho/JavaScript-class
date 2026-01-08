@@ -14,4 +14,4 @@ function largestWord(sentence) {
     }
     return result
 }
-console.log(largestWord('i will always there for you'))
+console.log(largestWord('i will always there for you'));

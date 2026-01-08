@@ -10,4 +10,4 @@ return result
 
 
 let result=myMap(number, x=> x*2)
-console.log(result)
+console.log(result);

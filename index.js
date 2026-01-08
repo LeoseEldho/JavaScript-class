@@ -513,19 +513,5 @@
 // sdfewasdfw
 // ---------------------------------------------------------------------------------------------------------------------------
 
-// Q2. First Non-Repeating Window Character
-// Given a string S and integer K,
-//  for every substring of size K, print the first non-repeating character.
-// If none exists, print #.
-// Input
 
-// S = "aabcdbec"
-// K = 4
-// Output
-// a b c d d e
-
-function findAverages(arr, k) {
-    
-}
-console.log(findAverages([1, 3, 2, 6, -1, 4, 1, 8, 2], 4));
-//sdfgsdfgsdfgsdf
+// asdfasdasdasdfasdfdsfasd
