@@ -514,4 +514,29 @@
 // ---------------------------------------------------------------------------------------------------------------------------
 
 
-// asdfasdasdasdfasdfdsfasd
+function reverseGravity(grid) {
+    let rows = grid.length;
+    let cols = grid[0].length;
+    for (let i = 0; i < cols; i++) {
+        let count = 0;
+        for (let j = 0; j < rows; j++) {
+            if (grid[j][i] == "#") {
+                count++;
+            }
+        }
+        for (let k = 0; k < rows; k++){
+            if (k<count) {
+                grid[k][i]='#'
+            } else {
+                grid[k][i]="."
+            }
+        }
+    }
+    return grid;
+}
+let grid = [
+    ['.', '.', '#'],
+    ['.', '#', '.'],
+    ['#', '.', '#']
+];
+console.log(reverseGravity(grid));
