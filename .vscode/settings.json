@@ -1,5 +1,0 @@
-{
-  "javascript.suggestionActions.enabled": true,
-  "javascript.suggest.completeFunctionCalls": true,
-  "liveServer.settings.port": 5501
-}

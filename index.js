@@ -532,22 +532,163 @@
 // }
 // console.log(nonRepeat(arr))
 
-let arr = [1,2,3,4,5,4];
+// const arr = [0,1, 0, 2,];
 
-function removeDuplicates(arr) {
-    let max = arr[0]
-    let second = Infinity
-    for (let i = 0; i < arr.length; i++){
-        if (arr[i] > max) {
-            second = max;
-            max=arr[i]
-        } else {
-            if (arr[i] > second && arr[i] !== max) {
-                second=arr[i]
-            }
+// const ZerotoEnd = (arr) => {
+//     let index = 0;
+//     for (let i = 0; i < arr.length; i++){
+//         if (arr[i] !== 0) {
+//             arr[index] = arr[i]
+//             index++
+//         }
+//     }
+//     while (index < arr.length) {
+//         arr[index] = 0;
+//         index++
+//     }
+//     return arr
+// };
+// console.log(ZerotoEnd(arr))
+
+// const removeDupu = (arr) => {
+//     let result = [];
+//     for (let i = 0; i < arr.length; i++){
+//         let found = false;
+//         for (let j = 0; j < result.length; j++){
+//             if (arr[i] == result[j]) {
+//                 found = true;
+//                 break;
+//             }
+//         }
+//         if (!found) {
+//             result.push(arr[i])
+//         }
+//     }
+//     return result
+// };
+// console.log(removeDupu([2,1,3,3,2,4,5]))
+
+// const findMax = (arr) => {
+//     let max = arr[2]
+//     let min=arr[0]
+//     for (let i = 0; i < arr.length; i++){
+//         if (arr[i] < max) {
+//             min=arr[i]
+//         }
+//     }
+//     for (let i = 0; i < arr.length; i++){
+//         if (arr[i] > max) {
+//             max=arr[i]
+//         }
+//     }
+// return {min, max}
+// };
+// console.log(findMax([10,3,4,5]))
+
+// const sumArray = (arr) => {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++){
+//         sum+=arr[i]
+//     }
+//     return sum
+// };
+// console.log(sumArray([1,2,9,1,3,4]))
+
+// const rotateArray = (arr) => {
+//     let result = [];
+//     for (let i = arr.length - 1; i >= 0; i--){
+//         result.push(arr[i])
+//     }
+//     return result
+// };
+// console.log(rotateArray([2,1,3,4]))
+
+// const arrayRotate = (arr) => {
+//     let left = 0;
+//     let right = arr.length - 1;
+//     while (left < right) {
+//         [arr[left], arr[right]] =[ arr[right], arr[left]]
+//         left++
+//         right--
+//     }
+//     return arr
+// };
+// console.log(arrayRotate([1,2,3,4,5]))
+
+// const arrayRotate = (arr) => {
+//     let n = arr.length
+//     let result = [];
+//     let last=arr.length-1
+//     for (let i = last - 1; i >= 0; i--){
+//         result+=arr[i]
+//     }
+//     result[0] = last
+//     return result
+// };
+// console.log(arrayRotate([1,2,3,4,5]))
+
+// const revString = (str) => {
+//     let rev = '';
+//     for (let i = str.length - 1; i >= 0; i--){
+//         rev+=str[i]
+//     }
+//     return rev
+// };
+// console.log(revString("hello world"))
+
+
+
+// function reverseWords(sentence) {
+//     let word = sentence.split(" ");
+//     let result=""
+//     for (let i = word.length - 1; i >= 0; i--){
+//         result += word[i]
+//         if (i !== "") {
+//             result+=" "
+//         }
+//     }
+//     return result
+// }
+// console.log(reverseWords("I love JavaScript"));
+
+// const Palindrome = (str) => {
+//     let rev = '';
+//     for (let i = str.length - 1; i >= 0; i--){
+//         rev+=str[i]
+//     }
+//     if (str == rev) {
+//         return true
+//     } else {
+//         return false
+//     }
+// };
+// console.log(Palindrome("anna"))
+
+// const CountVowel = (str) => {
+//     let vowels = "aeiouAEIOU"
+//     let count=0
+//     for (let i of str) {
+//         if (vowels.includes(i)) {
+//     count++
+// }
+//     }
+//     return count
+// }
+
+// console.log(CountVowel("biju"))
+
+const findDupu = (arr) => {
+    let count = {};
+    let result = [];
+    for (let i in arr) {
+        count[arr[i]]=([count[arr[i]]]||0)+1
+    }
+    for (let i in count) {
+        if (count[i]> 1) {
+            result[result.length]=Number(i)
         }
     }
-    
-    return second
+    return result
 }
-console.log(removeDuplicates(arr))
+
+console.log(findDupu([1, 2, 1,3, 3, 4, 1]));
