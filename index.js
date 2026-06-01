@@ -603,7 +603,7 @@
 // };
 // console.log(rotateArray([2,1,3,4]))
 
-// const arrayRotate = (arr) => {
+// const arrayRev = (arr) => {
 //     let left = 0;
 //     let right = arr.length - 1;
 //     while (left < right) {
@@ -613,19 +613,7 @@
 //     }
 //     return arr
 // };
-// console.log(arrayRotate([1,2,3,4,5]))
-
-// const arrayRotate = (arr) => {
-//     let n = arr.length
-//     let result = [];
-//     let last=arr.length-1
-//     for (let i = last - 1; i >= 0; i--){
-//         result+=arr[i]
-//     }
-//     result[0] = last
-//     return result
-// };
-// console.log(arrayRotate([1,2,3,4,5]))
+// console.log(arrayRev([1,2,3,4,5]))
 
 // const revString = (str) => {
 //     let rev = '';
@@ -635,8 +623,6 @@
 //     return rev
 // };
 // console.log(revString("hello world"))
-
-
 
 // function reverseWords(sentence) {
 //     let word = sentence.split(" ");
@@ -677,18 +663,75 @@
 
 // console.log(CountVowel("biju"))
 
+// const findDupu = (arr) => {
+//     let count = {};
+//     let result = [];
+//     for (let i = 0; i < arr.length; i++){
+//         count[arr[i]] = (count[arr[i]] || 0) + 1
+//     }
+//     for (let key in count) {
+//         if (count[key] > 1) {
+//             result.push(Number(key))
+//         }
+//     }
+//     return result;
+// }
+
+// console.log(findDupu([1, 2, 1,3, 3, 4, 1]));
+
+// function compressString(s) {
+//   let result = "";
+//   let count = 1;
+
+//   for (let i = 1; i <= s.length; i++) {
+//     if (s[i] === s[i - 1]) count++;
+//     else {
+//       result += s[i-1 ] + count;
+//       count = 1;
+//     }
+//   }
+//   return result;
+// }
+// console.log(compressString('aaaabbcc'))
+// // OUTPUT=a4b2c2
+
+// const compressString = (str) => {
+//     let result = '';
+//     let count = 1;
+//     for (let i = 0; i < str.length; i++){
+//         if (str[i] == str[i + 1]) {
+//             count++
+//         } else {
+//             result += str[i] + count
+//             count=1
+//         }
+//     }
+//     return result
+// };
+// console.log(compressString("aaaabbcc"))
+
+// const expandString = (str) => {
+//     let result = "";
+//     let count = 0
+//     for (let i = 0; i < str.length; i+=2){
+//         result+=str[i].repeat(str[i+1])
+//     }
+//     return result
+// };
+// console.log(expandString("a4b2c3"));
+// output="aaaabbcc"
+
 const findDupu = (arr) => {
-    let count = {};
-    let result = [];
-    for (let i in arr) {
-        count[arr[i]]=([count[arr[i]]]||0)+1
+    let result = {}
+    let output=[]
+    for (let i = 0; i < arr.length; i++){
+        result[arr[i]] = (result[arr[i]] || 0) + 1;
     }
-    for (let i in count) {
-        if (count[i]> 1) {
-            result[result.length]=Number(i)
+    for (let key in result) {
+        if (result[arr[key]] > 1) {
+            output.push(arr[key])
         }
     }
-    return result
-}
-
-console.log(findDupu([1, 2, 1,3, 3, 4, 1]));
+    return output
+};
+console.log(findDupu([1,2,3,1,2,5]))
