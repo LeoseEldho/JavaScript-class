@@ -721,17 +721,16 @@
 // console.log(expandString("a4b2c3"));
 // output="aaaabbcc"
 
-const findDupu = (arr) => {
-    let result = {}
-    let output=[]
-    for (let i = 0; i < arr.length; i++){
-        result[arr[i]] = (result[arr[i]] || 0) + 1;
-    }
-    for (let key in result) {
-        if (result[arr[key]] > 1) {
-            output.push(arr[key])
-        }
-    }
-    return output
-};
-console.log(findDupu([1,2,3,1,2,5]))
+
+function expandString(s) {
+  let result = "";
+    for (let i = 0; i < s.length; i ++){
+    let char = s[i]
+        let count = (s[i + 1])
+      console.log(s[i],s[i+1],count)
+        
+    result+=char.repeat(count)
+  }
+  return result
+}
+console.log(expandString("a3b4c1"))
