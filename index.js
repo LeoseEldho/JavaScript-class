@@ -721,16 +721,9 @@
 // console.log(expandString("a4b2c3"));
 // output="aaaabbcc"
 
+// find methode
+let arr = [1,2,3,4,5]
 
-function expandString(s) {
-  let result = "";
-    for (let i = 0; i < s.length; i ++){
-    let char = s[i]
-        let count = (s[i + 1])
-      console.log(s[i],s[i+1],count)
-        
-    result+=char.repeat(count)
-  }
-  return result
-}
-console.log(expandString("a3b4c1"))
+const findNo = arr.find(x=>x>3)
+// RETRUN fisrt no. of callback satisfy;
+console.log(findNo)
