@@ -721,9 +721,9 @@
 // console.log(expandString("a4b2c3"));
 // output="aaaabbcc"
 
-// find methode
-let arr = [1,2,3,4,5]
+// fill methode
+ arr = [1,3,4,5,'c']
 
-const findNo = arr.find(x=>x>3)
-// RETRUN fisrt no. of callback satisfy;
-console.log(findNo)
+const findNo = arr.fill(0,0,3)
+// fill the first no. to selected place .
+console.log(findNo) 
