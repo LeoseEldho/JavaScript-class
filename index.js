@@ -721,9 +721,19 @@
 // console.log(expandString("a4b2c3"));
 // output="aaaabbcc"
 
-// fill methode
- arr = [1,3,4,5,'c']
 
-const findNo = arr.fill(0,0,3)
-// fill the first no. to selected place .
-console.log(findNo) 
+// let i = 0
+// let sum=0
+// while (i <= 5) {
+//     sum += i
+//     i++
+// }
+// console.log(sum)
+
+for (let i = 0; i < 3; i++){
+let mask=''
+    for (let j = 0; j < 3; j++){
+        mask+="*"
+    }
+console.log(mask)
+}
