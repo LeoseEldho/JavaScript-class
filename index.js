@@ -730,10 +730,15 @@
 // }
 // console.log(sum)
 
-for (let i = 0; i < 3; i++){
-let mask=''
-    for (let j = 0; j < 3; j++){
-        mask+="*"
+
+const separateCharacters = (str) => {
+    let result = "";
+    for (let i = 0; i < str.length; i++){
+        if (str[i] !== " ") {
+            result+=str[i]+" "
+        }
     }
-console.log(mask)
-}
+    return result
+};
+
+console.log(separateCharacters("Hello World"));
