@@ -5,7 +5,7 @@
 }
 
 public class MethodOverriding extends Father{
- void bike() {
+ @Override void bike() {
 		System.out.println("Son bike");
 	}
 	public static void main(String[] args) {

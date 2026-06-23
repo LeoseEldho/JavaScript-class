@@ -731,14 +731,32 @@
 // console.log(sum)
 
 
-const separateCharacters = (str) => {
-    let result = "";
-    for (let i = 0; i < str.length; i++){
-        if (str[i] !== " ") {
-            result+=str[i]+" "
-        }
-    }
-    return result
-};
+// const dupu = (arr) => {
+//     let result = [];
+//     for (let i = 0; i < arr.length; i++){
+//         let found = false;
+//         for (let j = 0; j < result.length; j++){
+//             if (arr[i] == result[j]) {
+//                 found = true;
+//                 break;
+//             }
+//         }
+//         if (!found) {
+//             result.push(arr[i])
+//         }
+//     }
+//     return result;
+// };
+// console.log(dupu([1,3,2,2,1]))
 
-console.log(separateCharacters("Hello World"));
+console.log("1. Start"); 
+
+setTimeout(() => {
+  console.log("2. Timer (Macrotask)");
+}, 0);
+
+Promise.resolve().then(() => {
+  console.log("3. Promise (Microtask)");
+});
+
+console.log("4. End");
