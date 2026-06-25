@@ -749,14 +749,7 @@
 // };
 // console.log(dupu([1,3,2,2,1]))
 
-console.log("1. Start"); 
-
-setTimeout(() => {
-  console.log("2. Timer (Macrotask)");
-}, 0);
-
-Promise.resolve().then(() => {
-  console.log("3. Promise (Microtask)");
-});
-
-console.log("4. End");
+let str = 'leose';
+for (let i = str.length-1; i >=0; i--){
+  console.log(str[i])
+}
