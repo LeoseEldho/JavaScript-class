@@ -720,36 +720,3 @@
 // };
 // console.log(expandString("a4b2c3"));
 // output="aaaabbcc"
-
-
-// let i = 0
-// let sum=0
-// while (i <= 5) {
-//     sum += i
-//     i++
-// }
-// console.log(sum)
-
-
-// const dupu = (arr) => {
-//     let result = [];
-//     for (let i = 0; i < arr.length; i++){
-//         let found = false;
-//         for (let j = 0; j < result.length; j++){
-//             if (arr[i] == result[j]) {
-//                 found = true;
-//                 break;
-//             }
-//         }
-//         if (!found) {
-//             result.push(arr[i])
-//         }
-//     }
-//     return result;
-// };
-// console.log(dupu([1,3,2,2,1]))
-
-let str = 'leose';
-for (let i = str.length-1; i >=0; i--){
-  console.log(str[i])
-}
